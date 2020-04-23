@@ -49,3 +49,11 @@ val listItem :List<String> = listOf("ram","raja")
              //output:: ram raja 
         }
 ```
+## Elvis Operator
+```kotlin
+//When we have a nullable reference b, we can say "if b is not null, use it, otherwise use some non-null
+val l: Int = if (b != null) b.length else -1
+
+//Along with the complete if-expression, this can be expressed with the Elvis operator, written ?::
+val l = b?.length ?: -1
+```
