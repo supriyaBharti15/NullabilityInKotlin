@@ -51,6 +51,9 @@ val listItem :List<String> = listOf("ram","raja")
 ```
 ## Elvis Operator
 ```kotlin
+//If the expression to the left of ?: is not null, the elvis operator returns it, otherwise it returns the expression to the right. Note that the right-hand side expression is evaluated only if the left-hand side is null.
+
+
 //When we have a nullable reference b, we can say "if b is not null, use it, otherwise use some non-null
 val l: Int = if (b != null) b.length else -1
 
