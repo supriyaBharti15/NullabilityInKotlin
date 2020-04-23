@@ -60,3 +60,8 @@ val l: Int = if (b != null) b.length else -1
 //Along with the complete if-expression, this can be expressed with the Elvis operator, written ?:
 val l = b?.length ?: -1
 ```
+## The !! Operator
+```kotlin
+//ssertion operator (!!) converts any value to a non-null type and throws an exception if the value is null.
+val l = b!!.length
+```
