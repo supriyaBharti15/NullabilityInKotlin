@@ -24,6 +24,6 @@ null checking in Kotlin | Safe call (?.) | null-coalescing operator  Elvis (?:) 
     println(j)//null
 ```
 ```kotlin
-Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have another Employee as a department head, then to obtain the name of Bob's department head (if any), we write the following:
+//Safe calls are useful in chains. For example, if Bob, an Employee, may be assigned to a Department (or not), that in turn may have //another Employee as a department head, then to obtain the name of Bob's department head (if any), we write the following:
 bob?.department?.head?.name
 ```
