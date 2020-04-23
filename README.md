@@ -15,7 +15,11 @@ null checking in Kotlin | Safe call (?.) | null-coalescing operator  Elvis (?:) 
 ```kotlin
  var r = a.length  //it's guaranteed not to cause an NPE, so you can safely
      r = b.length //// error: variable 'b' can be null
-     
+
      r = b!!.length
-        println(r)//output :: null
+     println(r)//output :: null
+        
+        
+    var j = b?.length
+    println(j)//null
 ```
